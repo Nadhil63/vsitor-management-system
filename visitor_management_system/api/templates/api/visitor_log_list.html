@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Log List</title>
+</head>
+<body>
+    <h1>Visitor Log List</h1>
+    <ul>
+    {% for visitor_log in visitor_logs %}
+        <li>{{ visitor_log.visitor_name }} - {{ visitor_log.visitor_email }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
